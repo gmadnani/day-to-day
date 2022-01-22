@@ -22,4 +22,14 @@ function BlockColor(){
     })
 }
 
+$(".saveBtn").on("click", function(){
+    
+    var time = $(this).parent().attr("id");
+    var textevent = $(this).siblings(".description").val();
+
+    localStorage.setItem(time, textevent)
+})
+
+$("#9 .description").val(localStorage.getItem("9"));
+
 BlockColor();
