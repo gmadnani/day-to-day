@@ -3,7 +3,7 @@
 $("#currentDay").html(moment().format('dddd, MMMM Do'))
 
 //fetching the current hour
-var currentHour = moment().hours() -3;
+var currentHour = moment().hours();
 
 //function for adding the color blocks to the html
 $(".time-block").each(function(){
